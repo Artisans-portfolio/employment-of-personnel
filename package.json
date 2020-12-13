@@ -1,0 +1,23 @@
+{
+  "name": "employment-of-personnel",
+  "version": "1.0.0",
+  "description": "application that keeps records of military personnel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artisans-portfolio/employment-of-personnel.git"
+  },
+  "author": "oleg kochiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artisans-portfolio/employment-of-personnel/issues"
+  },
+  "homepage": "https://github.com/Artisans-portfolio/employment-of-personnel#readme",
+  "devDependencies": {
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
+  }
+}
