@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расход личного состава</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/felxbox.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <script  src="js/script.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <div class="header-logo">
+        <div class="logo-text">
+            РАСХОД личного состава
+        </div>
+        <div class="logo-version">
+            (РЛС v1.0)
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu-home" onclick="document.location.href = 'index.html';">
+            Домой
+        </div>
+        <div class="header-menu-gather" onclick="document.location.href = 'html/gather.html';">
+            Команда СБОР
+        </div>
+        <div class="header-menu-instructions" onclick="document.location.href = 'html/instructions.html';">
+            Инструкция к применению
+        </div>
+    </div>
+</div>
+
+<div class="main-container">
+    <hr class="hr-line-top">
+    <div class="welcome">
+        <p>
+            Добро пожаловать.
+        </p>
+    </div>
+    <div class="description">
+        <p>
+            Вы используете программу для подсчета расхода личного состава. <span class="red">Следуйте</span> инструкциям и Вы обязательно разберетесь. <br>
+            Вы можете добавить / редактировать данные военнослужащего, список подразделений и список должностей. Выберите снизу то, что Вам необходимо.
+        </p>
+    </div>
+    <div class="nav-menu  icons-container">
+        <div class="icon employees" onclick="document.location.href = 'html/list_employees.html';">
+            <img src="images/icons/soldier3.png" alt="">
+            <p>
+                Список личного состава
+            </p>
+        </div>
+        <div class="icon posts" onclick="document.location.href = 'html/list_employees.html';">
+            <img src="images/icons/post3.png" alt="">
+            <p>
+                Список подразделений
+            </p>
+        </div>
+        <div class="icon units" onclick="document.location.href = 'html/list_employees.html';">
+            <img src="images/icons/unit3.png" alt="">
+            <p>
+                Список должностей
+            </p>
+        </div>
+    </div>
+    <hr class="hr-line-bottom">
+</div>
+</body>
+
+</html>

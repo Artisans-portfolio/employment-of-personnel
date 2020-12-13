@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расход личного состава</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/felxbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="stylesheet" type="text/css" href="../css/list_employees.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_new_employee.css">
+    <link rel="stylesheet" type="text/css" href="../css/main-table.css">
+    <script async src="../js/listEmployees.js"></script>
+    <script type="module"  src="../js/addNewEmployee.js"></script>
+    <script async src="../js/DBIO.js"></script>
+
+</head>
+
+<body>
+<div class="header">
+    <div class="header-logo">
+        <div class="logo-text">
+            РАСХОД личного состава
+        </div>
+        <div class="logo-version">
+            (РЛС v1.0)
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu-home" onclick="document.location.href = '../index.html';">
+            Домой
+        </div>
+        <div class="header-menu-gather" onclick="document.location.href = 'gather.html';">
+            Команда СБОР
+        </div>
+        <div class="header-menu-instructions" onclick="document.location.href = 'instructions.html';">
+            Инструкция к применению
+        </div>
+    </div>
+</div>
+
+<div class="main-container">
+    <hr class="hr-line-top">
+    <div class="content-container">
+        <h2>Список военнослужащих:</h2>
+        <table id="mainTable" class="employees-table">
+            <tr class="header-table">
+                <th>№</th>
+                <th>ФИО</th>
+                <th>Должность</th>
+                <th>Звание</th>
+                <th>Подразделение</th>
+                <th colspan="2" class="th-btn-add"><btn class="btn-add" onclick="showPopupMenu(0)">  Добавить нового военнослужащего</btn></th>
+            </tr>          
+        </table>
+    </div>
+
+
+
+    <div class="popup">
+        <div class="popup-container ">
+            <div class="popup-wrapper" id="">
+                <h2>
+                    Заполните / отредактируйте сведения о военнослужащем:
+                </h2>
+                <hr class="hr-line-top">
+                <br>
+                <div class="input-profileimg-container">
+                    <div class="input-container">
+                        <div class="item-fio">
+                        <label for="input-fio">Введите ФИО:</label>
+                        <input id="fio" class="input-fio" name="fio" type="text" placeholder="ФИО">
+                        </div>
+                        <div class="item-post">
+                            <label for="input-post">Введите должность:</label>
+                            <input id="post" class="input-post" name="post" type="text" placeholder="Должность">
+                        </div>
+                        <div class="item-rank">
+                            <label for="select-rank">Звание:</label>
+                            <select id="rank" class="select-rank">
+                                <option value>Выберите звание</option>
+                                <option>Рядовой</option>
+                                <option>Ефрейтор</option>
+                                <option>Мл. с-т</option>
+                                <option>С-т</option>
+                                <option>Ст. с-т</option>
+                                <option>Старшина</option>
+                                <option>Пр-к</option>
+                                <option>Ст. пр-к</option>
+                                <option>Л-т</option>
+                                <option>Ст. л-т</option>
+                                <option>К-н</option>
+                                <option>М-р</option>
+                                <option>П/П-к</option>
+                            </select>
+                        </div>
+                        <div class="item-unit">
+                            <label for="select-unit">Подразделение:</label>
+                            <select id="unit" class="select-unit">
+                                <option value>Выберите подразделение</option>
+                                <option>Управление</option>
+                                <option>СУС</option>
+                                <option>ПУС</option>
+                                <option>ВМТО</option>
+                            </select>
+                        </div>
+                        <div class="btn-container">
+                            <btn id="btn-save" class="btn-save">Сохранить</btn>
+                            <btn id="btn-cancel" class="btn-cancel" onclick="closePopupMenu()">Отмена</btn>
+                        </div>
+                    </div>
+                    <div class="profileimg-container">
+                        <img src="../images/profile.png" alt="Profile">
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr-line-bottom">
+</div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.icon {
+    transition: all .4s;
+}
+.icon:hover {
+    border-radius: 0px;
+    background-color: #4e5258;
+}
+.header-menu-gather, .header-menu-home, .header-menu-instructions {
+    transition-property: "background-color";
+    transition-property: "border-bottom";
+    transition-duration: .4s;
+}
+.header-menu-gather:hover, .header-menu-home:hover, .header-menu-instructions:hover {
+    background-color: #4e5258;
+    border-bottom: 1px solid rgb(218, 210, 210);
+}

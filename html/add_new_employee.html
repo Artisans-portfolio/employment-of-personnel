@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/add_new_employee.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script async src="../js/add_new_employee.js"></script>
+</head>
+<body>
+
+    <button id="btn-open">Показать форму</button>
+
+    <div class="popup">
+        <div class="popup-container ">
+            <div class="popup-wrapper" id="">
+                <h2>
+                    Заполните / отредактируйте сведения о военнослужащем:
+                </h2>
+               
+                <div class="item-fio">
+                    <label for="input-fio">Введите ФИО:</label>
+                    <input class="input-fio" name="fio" type="text" placeholder="ФИО">
+                </div>
+                <div class="item-post">
+                    <label for="input-post">Введите должность:</label>
+                    <input class="input-post" name="post" type="text" placeholder="Должность">
+                </div>
+                <div class="item-unit">
+                    <label for="select-unit">Подразделение:</label>
+                    <select class="select-unit" name="unit">
+                        <option value>Выберите подразделение</option>
+                    </select>
+                </div>
+                <div class="btn-container">
+                    <button id="btn-save">Сохранить</button>
+                    <button id="btn-cancel">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
